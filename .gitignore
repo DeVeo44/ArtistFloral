@@ -1,0 +1,7 @@
+# Dossier administratif à ne pas uploader
+DOCS/
+
+# Divers
+.DS_Store
+node_modules/
+dist/

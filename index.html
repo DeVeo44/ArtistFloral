@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Artistfloral : votre artisan floral à Vertou</title>
+  </head>
+  <body>
+    <header
+      class="bg-lin/90 shadow-navbar backdrop-blur-sm sticky top-0 z-50 py-6 px-6 md:px-12"
+    >
+      <nav class="flex justify-between items-center max-w-7xl mx-auto">
+        <div>
+          <a href="/" class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p class="font-titre text-2xl text-sauge">Artistfloral</p>
+          </a>
+        </div>
+
+        <div
+          class="hidden lg:flex font-corp text-sauge/90 uppercase text-xs tracking-widest font-semibold mx-auto"
+        >
+          <ul class="flex gap-5 m-8 no-underline">
+            <li class="hover:underline hover:text-terracotta">
+              <a href="index.html">Accueil</a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="création_végétales.html">Création Végétales</a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="atelier.html">Ateliers & Événement </a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="a_propos.html">À propos</a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="contact&commande.html">Contact & Commande</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-4 md:gap-6">
+          <a
+            href="tel:0668285872"
+            class="hidden md:flex items-center gap-2 text-sauge font-bold text-sm hover:text-terracotta transition"
+          >
+            <i class="fa-solid fa-phone text-xs"></i>
+            06 68 28 58 72
+          </a>
+
+          <div class="flex gap-3">
+            <a
+              href="https://www.facebook.com/profile.php?id=61556307237543"
+              class="w-9 h-9 border border-sauge/40 rounded-full flex items-center justify-center text-sauge hover:bg-sauge hover:text-white transition-all duration-300"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/artistfloral/"
+              class="w-9 h-9 border border-sauge/40 rounded-full flex items-center justify-center text-sauge hover:bg-sauge hover:text-white transition-all duration-300"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+
+            <button
+              id="menu-btn"
+              class="lg:hidden text-sauge focus:outline-none ml-2"
+            >
+              <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-lin/95 absolute left-0 top-full w-full border-t border-sauge/10 py-6 px-12 space-y-4 shadow-xl lg:hidden"
+      >
+        <ul
+          class="flex flex-col gap-4 font-corp text-sauge uppercase text-xs tracking-widest font-semibold"
+        >
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="création_végétales.html">Création Végétales</a></li>
+          <li><a href="atelier.html">Ateliers & Événement</a></li>
+          <li><a href="a_propos.html">À propos</a></li>
+          <li><a href="contact&commande.html">Contact & Commande</a></li>
+          <li class="pt-4 border-t border-sauge/10 md:hidden">
+            <a href="tel:0668285872" class="text-terracotta font-bold"
+              >06 68 28 58 72</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="bg-lin">
+      <section class="relative px-4 pt-4 md:pt-8 pb-12 md:pb-24 text-center">
+        <div class="max-w-5xl mx-auto relative group">
+          <img
+            src="/src/assets/images/hero2.webp"
+            alt="Art Floral"
+            class="w-full h-80 md:h-125 object-cover rounded-sm shadow-2xl"
+          />
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black/20 md:bg-black/10 p-4"
+          >
+            <h1
+              class="text-floral-white font-titre text-4xl md:text-6xl mb-2 md:mb-6 leading-tight"
+            >
+              ArtistFloral
+            </h1>
+
+            <p
+              class="font-corp text-floral-white italic text-xl md:text-3xl max-w-xs md:max-w-none"
+            >
+              L'art floral au rythme des saisons
+            </p>
+
+            <div class="mt-6 md:mt-8">
+              <a
+                href="#"
+                class="bg-sauge/80 hover:bg-sauge text-floral-white px-6 py-2 md:px-8 md:py-3 rounded-full backdrop-blur-md transition text-sm md:text-base"
+              >
+                Découvrir l'univers
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-rose-poudre text-floral-white py-12 md:py-20 -mt-8 md:-mt-16 relative z-10"
+      >
+        <div
+          class="max-w-4xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-12"
+        >
+          <div class="w-1/3 hidden md:block">
+            <img
+              src="/src/assets/images/fleurs-dessin.png"
+              alt=""
+              class="opacity-80"
+            />
+          </div>
+
+          <div class="w-full md:w-2/3 text-center md:text-left">
+            <h2
+              class="font-titre text-3xl md:text-4xl mb-4 italic text-floral-white/90"
+            >
+              L'Esprit ArtistFloral...
+            </h2>
+
+            <p class="text-base md:text-lg leading-relaxed font-light">
+              À contre-courant du commerce floral traditionnel, Artistfloral est
+              un atelier sans vitrine situé à Vertou. Ici, pas de stock :
+              <b class="font-bold">je travaille exclusivement à la commande.</b
+              ><br class="hidden md:block" />
+              Cette approche me permet de sélectionner avec soin des végétaux de
+              saison et de cultiver moi-même une partie de mes fleurs. En
+              limitant ainsi les intermédiaires et les transports, je réduis
+              l'impact environnemental tout en vous garantissant une fraîcheur
+              absolue et éviter le gaspillage. Mon objectif profond ? Utiliser
+              ce que la nature nous offre pour créer une émotion. Chaque bouquet
+              est créé avec une sensibilité unique et l’envie de vous faire
+              plaisir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-rose-poudre pb-20 px-6 md:px-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="relative group overflow-hidden rounded-4xl border-8 border-white shadow-xl"
+          >
+            <img
+              src="mariage.jpg"
+              class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-floral-rose/90 py-4 text-center"
+            >
+              <span class="text-white font-titre text-xl"
+                >Ateliers Créatifs</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-4xl border-8 border-white shadow-xl"
+          >
+            <img
+              src="abonnement.jpg"
+              class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-floral-rose/90 py-4 text-center"
+            >
+              <span class="text-white font-titre text-xl"
+                >Création Végétales</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-4xl border-8 border-white shadow-xl"
+          >
+            <img
+              src="atelier.jpg"
+              class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-floral-rose/90 py-4 text-center"
+            >
+              <span class="text-white font-titre text-xl"
+                >Mariages & Évènements</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex mt-12 justify-center items-center">
+          <button
+            class="bg-sauge/80 hover:bg-sauge text-floral-white px-10 py-4 rounded-full backdrop-blur-md transition shadow-lg text-sm md:text-base uppercase tracking-widest font-bold"
+          >
+            Réserver un atelier
+          </button>
+        </div>
+      </section>
+      <section class="bg-lin py-12 md:py-20 px-6 md:px-8">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16"
+        >
+          <div class="space-y-10 md:space-y-12">
+            <div class="text-center md:text-left">
+              <h2
+                class="font-titre text-3xl md:text-4xl text-sauge mb-6 border-b border-sauge/20 pb-2"
+              >
+                Mes Services sur Mesure
+              </h2>
+              <ul class="space-y-4 text-gray-700 text-sm md:text-base">
+                <li>
+                  <strong class="text-terracotta font-corp"
+                    >Bouquets & Compositions :</strong
+                  >
+                  Pièces uniques selon l'inspiration et la cueillette du jour.
+                </li>
+                <li>
+                  <strong class="text-terracotta font-corp"
+                    >Événementiel :</strong
+                  >
+                  Mariages et fleurissement pro pour faire rayonner vos moments
+                  forts.
+                </li>
+                <li>
+                  <strong class="text-terracotta font-corp">Livraison :</strong>
+                  Proximité Vertou et environs (incluant hommages au
+                  funérarium).
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-center md:text-left">
+              <h2
+                class="font-titre text-3xl md:text-4xl text-sauge mb-6 border-b border-sauge/20 pb-2"
+              >
+                Partager le Geste Créatif
+              </h2>
+              <p class="italic mb-4 text-gray-600">
+                L'atelier s'ouvre à vous pour des parenthèses créatives...
+              </p>
+              <ul class="space-y-4 text-gray-700 text-sm md:text-base">
+                <li>
+                  <strong class="text-terracotta font-corp"
+                    >Ateliers d'art floral :</strong
+                  >
+                  Apprendre à composer et découvrir le plaisir du végétal.
+                </li>
+                <li>
+                  <strong class="text-terracotta font-corp"
+                    >Privatisation :</strong
+                  >
+                  EVJF, anniversaires ou team building.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 md:p-10 rounded-4xl shadow-sm border border-sauge/10 self-start"
+          >
+            <h3 class="font-titre text-3xl text-sauge text-center mb-8">
+              Horaires d'Ouverture
+            </h3>
+
+            <div class="space-y-6 font-corp text-center">
+              <div class="pb-6 border-b border-dotted border-sauge/30">
+                <p
+                  class="uppercase tracking-widest text-[10px] font-bold text-gray-400 mb-1"
+                >
+                  Lundi au Samedi
+                </p>
+                <p class="text-3xl text-terracotta font-bold tracking-tight">
+                  10h — 19h
+                </p>
+                <p class="text-sm italic text-gray-500 mt-1">
+                  Sans interruption
+                </p>
+              </div>
+
+              <div class="pt-2">
+                <p
+                  class="text-sauge font-semibold uppercase text-xs tracking-wider"
+                >
+                  Joignable 7j/7
+                </p>
+                <p class="text-gray-600 text-sm mt-1">
+                  Par SMS, WhatsApp ou téléphone
+                </p>
+                <a
+                  href="tel:0668285872"
+                  class="block mt-4 text-2xl text-sauge hover:text-terracotta transition-colors font-bold"
+                >
+                  06 68 28 58 72
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-8 flex justify-center opacity-20">
+              <i class="fa-solid fa-leaf text-sauge text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-sauge text-floral-white pt-16 pb-8 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 border-b border-floral-white/20 pb-12 mb-8"
+        >
+          <div class="text-center md:text-left space-y-4">
+            <h2 class="font-titre text-4xl">Artistfloral</h2>
+            <p class="font-corp text-xs tracking-widest uppercase opacity-80">
+              Artisan Floral • Vertou
+            </p>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-center gap-6 md:gap-10 font-corp text-[10px] tracking-widest uppercase font-bold"
+          >
+            <a href="index.html" class="hover:text-rose-poudre transition"
+              >Accueil</a
+            >
+            <a
+              href="création_végétales.html"
+              class="hover:text-rose-poudre transition"
+              >Création Végétales</a
+            >
+            <a href="atelier.html" class="hover:text-rose-poudre transition"
+              >Ateliers & Événement</a
+            >
+            <a href="a_propos.html" class="hover:text-rose-poudre transition"
+              >À propos</a
+            >
+            <a
+              href="contact&commande.html"
+              class="hover:text-rose-poudre transition"
+              >Contact & Commande</a
+            >
+          </div>
+
+          <div class="flex gap-4">
+            <a
+              href="https://www.instagram.com/artistfloral/"
+              class="w-10 h-10 border border-floral-white/30 rounded-full flex items-center justify-center hover:bg-floral-white hover:text-sauge transition-all"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61556307237543"
+              class="w-10 h-10 border border-floral-white/30 rounded-full flex items-center justify-center hover:bg-floral-white hover:text-sauge transition-all"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-widest uppercase opacity-60"
+        >
+          <p class="text-center md:text-left">
+            © 2026 ArtistFloral — Tous droits réservés
+          </p>
+          <p class="text-center md:text-right">
+            Réalisé avec passion par
+            <a
+              href="https://www.linkedin.com/in/rhouvenaghel"
+              target="_blank"
+              class="underline hover:text-rose-poudre transition"
+            >
+              Raphaël Houvenaghel
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="src/js/script.js" defer></script>
+  </body>
+</html>

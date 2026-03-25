@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>À propos de votre artisan floral</title>
+  </head>
+  <body>
+    <header
+      class="bg-lin/90 shadow-navbar backdrop-blur-sm sticky top-0 z-50 py-6 px-6 md:px-12"
+    >
+      <nav class="flex justify-between items-center max-w-7xl mx-auto">
+        <div>
+          <a href="/" class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p class="font-titre text-2xl text-sauge">Artistfloral</p>
+          </a>
+        </div>
+
+        <div
+          class="hidden lg:flex font-corp text-sauge/90 uppercase text-xs tracking-widest font-semibold mx-auto"
+        >
+          <ul class="flex gap-5 m-8 no-underline">
+            <li class="hover:underline hover:text-terracotta">
+              <a href="index.html">Accueil</a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="création_végétales.html">Création Végétales</a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="atelier.html">Ateliers & Événement </a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="a_propos.html">À propos</a>
+            </li>
+            <li class="hover:underline hover:text-terracotta">
+              <a href="contact&commande.html">Contact & Commande</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-4 md:gap-6">
+          <a
+            href="tel:0668285872"
+            class="hidden md:flex items-center gap-2 text-sauge font-bold text-sm hover:text-terracotta transition"
+          >
+            <i class="fa-solid fa-phone text-xs"></i>
+            06 68 28 58 72
+          </a>
+
+          <div class="flex gap-3">
+            <a
+              href="https://www.facebook.com/profile.php?id=61556307237543"
+              class="w-9 h-9 border border-sauge/40 rounded-full flex items-center justify-center text-sauge hover:bg-sauge hover:text-white transition-all duration-300"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 border border-sauge/40 rounded-full flex items-center justify-center text-sauge hover:bg-sauge hover:text-white transition-all duration-300"
+            >
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+
+            <button
+              id="menu-btn"
+              class="lg:hidden text-sauge focus:outline-none ml-2"
+            >
+              <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-lin/95 absolute left-0 top-full w-full border-t border-sauge/10 py-6 px-12 space-y-4 shadow-xl lg:hidden"
+      >
+        <ul
+          class="flex flex-col gap-4 font-corp text-sauge uppercase text-xs tracking-widest font-semibold"
+        >
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/">Création Végétales</a></li>
+          <li><a href="atelier.html">Ateliers & Événement</a></li>
+          <li><a href="/">À propos</a></li>
+          <li><a href="/">Contact & Commande</a></li>
+          <li class="pt-4 border-t border-sauge/10 md:hidden">
+            <a href="tel:0668285872" class="text-terracotta font-bold"
+              >06 68 28 58 72</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="bg-lin">
+        <h1
+          class="text-5xl font-titre text-terracotta text-center py-20 md:py-32 px-6 max-w-4xl mx-auto"
+        >
+          Derrière Artistfloral, il y a une reconversion guidée par la passion
+          des fleurs.
+        </h1>
+      </section>
+
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto py-12"
+      >
+        <div class="bg-sauge/10 h-96 rounded-tr-[100px] overflow-hidden">
+          <img
+            src="/src/assets/images/photo-reconversion.webp"
+            alt="Reconversion"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-8 md:p-16">
+          <p
+            class="first-letter:text-6xl first-letter:font-titre first-letter:float-left first-letter:mr-3 font-corp leading-relaxed"
+          >
+            Après 35 ans passés dans le monde de la finance, j’ai ressenti le
+            besoin de donner du sens à ma vie professionnelle et de revenir à
+            quelque chose de plus essentiel, plus créatif, plus vivant.
+            <br />
+            Depuis toujours, sensible à la beauté des fleurs et à la nature,
+            j’ai choisi de me reconvertir dans l’art floral pour exercer un
+            métier de passion, où chaque création est le fruit d’un travail
+            artisanal et d’une vraie liberté artistique.
+          </p>
+        </div>
+      </section>
+
+      <section class="relative py-24 md:py-32 overflow-hidden">
+        <span
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[20rem] font-titre text-sauge/5 select-none pointer-events-none"
+        >
+          “
+        </span>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+          <blockquote class="text-center">
+            <p
+              class="font-titre text-3xl md:text-5xl text-sauge italic leading-tight"
+            >
+              "Revenir à quelque chose de plus essentiel,
+              <br class="hidden md:block" />
+              plus créatif, plus vivant."
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto py-12"
+      >
+        <div
+          class="order-first md:order-last bg-sauge/10 h-96 rounded-bl-[100px] overflow-hidden"
+        >
+          <img
+            src="/src/assets/images/photo-atelier.webp"
+            alt="L'Atelier"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-8 md:p-16">
+          <p
+            class="first-letter:text-6xl first-letter:font-titre first-letter:float-left first-letter:mr-3 font-corp leading-relaxed"
+          >
+            Aujourd’hui, à travers Artistfloral, je compose des créations
+            florales naturelles, inspirées par les saisons, les matières brutes
+            et les ambiances bohème chic. J’aime mélanger les textures, jouer
+            avec les formes imparfaites et créer des compositions qui
+            transmettent une émotion.
+            <br />
+            Que ce soit pour un mariage ou un événement, j’attache une grande
+            importance à comprendre vos envies, afin de proposer des créations
+            sur mesure, fidèles à votre univers et à votre histoire.
+          </p>
+        </div>
+      </section>
+
+      <section class="bg-sauge/5 py-24 md:py-32 mt-12">
+        <div
+          class="max-w-3xl mx-auto px-6 text-center leading-relaxed text-lg md:text-xl"
+        >
+          <p class="text-terracotta font-corp italic">
+            Artistfloral, c’est avant tout une rencontre entre ma rigueur et ma
+            sensibilité artistique, mon expérience de vie et ma créativité, pour
+            être au service de vos moments importants comme vos petits bonheurs
+            du quotidien.
+          </p>
+          <div class="mt-12 flex justify-center">
+            <a
+              href="/ateliers"
+              class="bg-sauge/80 hover:bg-sauge text-floral-white px-8 py-4 rounded-full backdrop-blur-md text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
+            >
+              Réservez votre Atelier
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-sauge text-floral-white pt-16 pb-8 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 border-b border-floral-white/20 pb-12 mb-8"
+        >
+          <div class="text-center md:text-left space-y-4">
+            <h2 class="font-titre text-4xl">Artistfloral</h2>
+            <p class="font-corp text-xs tracking-widest uppercase opacity-80">
+              Artisan Floral • Vertou
+            </p>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-center gap-6 md:gap-10 font-corp text-[10px] tracking-widest uppercase font-bold"
+          >
+            <a href="index.html" class="hover:text-rose-poudre transition"
+              >Accueil</a
+            >
+            <a
+              href="création_végétales.html"
+              class="hover:text-rose-poudre transition"
+              >Création Végétales</a
+            >
+            <a href="atelier.html" class="hover:text-rose-poudre transition"
+              >Ateliers & Événement</a
+            >
+            <a href="a_propos.html" class="hover:text-rose-poudre transition"
+              >À propos</a
+            >
+            <a
+              href="contact&commande.html"
+              class="hover:text-rose-poudre transition"
+              >Contact & Commande</a
+            >
+          </div>
+
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-10 h-10 border border-floral-white/30 rounded-full flex items-center justify-center hover:bg-floral-white hover:text-sauge transition-all"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 border border-floral-white/30 rounded-full flex items-center justify-center hover:bg-floral-white hover:text-sauge transition-all"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-widest uppercase opacity-60"
+        >
+          <p class="text-center md:text-left">
+            © 2026 ArtistFloral — Tous droits réservés
+          </p>
+          <p class="text-center md:text-right">
+            Réalisé avec passion par
+            <a
+              href="https://www.linkedin.com/in/rhouvenaghel"
+              target="_blank"
+              class="underline hover:text-rose-poudre transition"
+            >
+              Raphaël Houvenaghel
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="src/js/script.js" defer></script>
+  </body>
+</html>
