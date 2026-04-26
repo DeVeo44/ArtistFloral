@@ -21,7 +21,6 @@
               src="src/assets/images/Logo Artistfloral.webp"
               alt="Logo d'ArtistFloral*"
             />
-            <p class="font-titre text-2xl text-sauge">Artistfloral</p>
           </a>
         </div>
 
@@ -104,59 +103,204 @@
     </header>
 
     <main>
-      <section class="py-20 px-6 max-w-7xl mx-auto">
+      <section class="py-20 lg:py-32 px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div class="space-y-8">
-            <h1
-              class="font-titre text-5xl md:text-7xl text-sauge leading-tight"
+            <div class="space-y-4">
+              <h1
+                class="font-titre text-5xl md:text-7xl lg:text-8xl text-sauge leading-[0.9] lowercase"
+              >
+                Ateliers <br />
+                <span class="text-terracotta italic ml-8 md:ml-12"
+                  >& Événements</span
+                >
+              </h1>
+              <div class="w-24 h-px bg-terracotta/30 mt-6"></div>
+            </div>
+
+            <p
+              class="text-gray-600 text-lg md:text-xl leading-relaxed italic max-w-xl"
             >
-              Ateliers & <br />Événements
-            </h1>
-            <p class="text-gray-600 text-lg leading-relaxed max-w-xl">
-              Venez vivre une parenthèse végétale au cœur de l'atelier. Apprenez
-              à composer avec les fleurs de saison et repartez avec votre
-              création unique.
+              Venez vivre une parenthèse végétale au cœur de mon atelier à
+              Vertou. Apprenez à composer avec les fleurs de saison et repartez
+              avec votre création unique.
             </p>
-            <ul class="space-y-4 text-sm text-gray-500 italic">
-              <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 rounded-full bg-sauge"></span> Fleurs
-                fraîches et locales de saison
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 rounded-full bg-sauge"></span> Matériel
-                et goûter gourmand inclus
-              </li>
-            </ul>
+
+            <div class="flex items-center gap-4 text-sauge">
+              <span class="p-3 bg-sauge/10 rounded-full">
+                <i class="fa-solid fa-leaf"></i>
+              </span>
+              <p class="text-sm font-medium">
+                Fleurs locales, matériel de qualité et conseils personnalisés
+              </p>
+            </div>
+
+            <p
+              class="text-xs text-gray-400 uppercase tracking-[0.2em] flex items-center gap-3"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-terracotta animate-pulse"
+              ></span>
+              Ateliers en petit comité (max 6 personnes)
+            </p>
           </div>
 
-          <div class="relative group">
-            <div
-              class="absolute -inset-4 border border-sauge/10 rounded-[3rem] rotate-2"
-            ></div>
-            <div
-              id="calendly-container"
-              class="relative bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl text-center min-h-125 flex flex-col justify-center items-center"
-            >
-              <i
-                class="fa-regular fa-calendar-check text-4xl text-sauge/40 mb-4"
-              ></i>
-              <h2 class="font-titre text-3xl text-sauge mb-2">
-                Réserver votre place
-              </h2>
-              <p class="text-gray-500 mb-8">
-                Consultez les prochaines dates et réservez en ligne.
-              </p>
-              <button
-                onclick="initCalendly()"
-                class="bg-sauge text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-terracotta transition-all shadow-lg"
-              >
-                Voir le calendrier
-              </button>
-            </div>
+          <div class="grid grid-cols-2 gap-4">
+            <img
+              src="src/assets/images/atelier-1.webp"
+              alt="Intérieur de l'atelier"
+              class="rounded-4xl shadow-lg w-full h-48 object-cover"
+            />
+            <img
+              src="src/assets/images/atelier-2.webp"
+              alt="Atelier en mère et fille"
+              class="rounded-4xl shadow-lg w-full h-48 object-cover mt-6"
+            />
+            <img
+              src="src/assets/images/atelier-3.webp"
+              class="rounded-4xl shadow-lg w-full h-48 object-cover -mt-6"
+            />
+            <img
+              src="src/assets/images/atelier-4.webp"
+              alt="Création florale en atelier spécial noël"
+              class="rounded-4xl shadow-lg w-full h-48 object-cover"
+            />
           </div>
         </div>
       </section>
+      <section class="bg-lin/30 py-20 px-6">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <div class="text-center space-y-4">
+            <h3 class="font-titre text-4xl text-sauge lowercase italic">
+              La Carte des Ateliers
+            </h3>
+            <p class="text-gray-500 max-w-2xl mx-auto italic">
+              Des ateliers en petit comité, pensés comme des moments de partage,
+              de créativité et de douceur.
+            </p>
+            <p
+              class="text-xs text-terracotta font-bold uppercase tracking-widest"
+            >
+              Possibilité de privatiser l’atelier à partir de 4 personnes.
+            </p>
+          </div>
 
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-sauge/10 space-y-6"
+            >
+              <div
+                class="flex items-center gap-4 border-b border-sauge/10 pb-4"
+              >
+                <span class="text-2xl">🌿</span>
+                <h4 class="font-titre text-2xl text-sauge lowercase">
+                  Fleurs Fraîches
+                </h4>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-end">
+                  <span class="text-gray-600">Bouquet fleurs fraîches</span>
+                  <span class="font-bold text-terracotta">45€</span>
+                </li>
+                <li class="flex justify-between items-end">
+                  <span class="text-gray-600">Composition piquée</span>
+                  <span class="font-bold text-terracotta">45€</span>
+                </li>
+              </ul>
+              <p
+                class="text-[10px] text-gray-400 uppercase tracking-widest pt-4 italic"
+              >
+                Apprentissage des bases et travail des volumes.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-sauge/10 space-y-6"
+            >
+              <div
+                class="flex items-center gap-4 border-b border-sauge/10 pb-4"
+              >
+                <span class="text-2xl">🌾</span>
+                <h4 class="font-titre text-2xl text-sauge lowercase">
+                  Fleurs Séchées
+                </h4>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-end">
+                  <span class="text-gray-600">Bouquet fleurs séchées</span>
+                  <span class="font-bold text-terracotta">55€</span>
+                </li>
+                <li class="flex justify-between items-end">
+                  <span class="text-gray-600">Composition fleurs séchées</span>
+                  <span class="font-bold text-terracotta">55€</span>
+                </li>
+                <li class="flex justify-between items-end">
+                  <span class="text-gray-600">Couronne fleurs séchées</span>
+                  <span class="font-bold text-terracotta">55€</span>
+                </li>
+              </ul>
+              <p
+                class="text-[10px] text-gray-400 uppercase tracking-widest pt-4 italic"
+              >
+                Techniques de montage et style bohème.
+              </p>
+            </div>
+
+            <div
+              class="bg-sauge/5 p-8 rounded-[2.5rem] border border-sauge/20 space-y-6"
+            >
+              <div
+                class="flex items-center gap-4 border-b border-sauge/20 pb-4"
+              >
+                <span class="text-2xl">✨</span>
+                <h4 class="font-titre text-2xl text-sauge lowercase">
+                  Spécial & Duo
+                </h4>
+              </div>
+              <div class="space-y-4">
+                <div class="bg-white/60 p-4 rounded-xl border border-sauge/10">
+                  <p class="text-[10px] font-bold text-sauge uppercase mb-1">
+                    Duo Parent / Enfant
+                  </p>
+                  <p class="text-[10px] text-gray-500 italic mb-2">
+                    Ou Grand-Parent / Petit-Enfant
+                  </p>
+                  <p class="text-terracotta font-bold text-xl">35€</p>
+                </div>
+                <div class="pt-2">
+                  <p
+                    class="text-[11px] text-gray-600 font-bold mb-2 uppercase tracking-tighter"
+                  >
+                    À la demande :
+                  </p>
+                  <p class="text-xs text-gray-500 italic">
+                    Guirlande, couronne de tête, bracelet etc....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center space-y-8 pt-8">
+            <div
+              class="flex flex-col md:flex-row gap-6 items-center text-gray-400 text-xs uppercase tracking-[0.3em] font-bold"
+            >
+              <span>Tout est fourni</span>
+              <span class="hidden md:block opacity-30">•</span>
+              <span>Aucun niveau requis</span>
+              <span class="hidden md:block opacity-30">•</span>
+              <span>Repartez avec votre création</span>
+            </div>
+
+            <button
+              onclick="initCalendly()"
+              class="bg-sauge text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-terracotta transition-all shadow-xl hover:-translate-y-1"
+            >
+              Voir les dates & Réserver via Calendly
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="bg-lin py-24 px-6 overflow-hidden">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-20 space-y-4">
