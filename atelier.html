@@ -9,6 +9,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="icon" type="image/png" href="src/assets/images/favicon.jpg" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      defer
+    ></script>
     <title>Artistfloral | Ateliers & Événements - Vertou</title>
   </head>
   <body class="bg-floral-white font-corp">
@@ -26,7 +35,7 @@
         </div>
 
         <div
-          class="hidden lg:flex font-corp text-sauge/90 uppercase text-xs tracking-widest font-semibold mx-auto"
+          class="hidden lg:flex font-corp font-semibold text-sauge/90 uppercase text-sm tracking-widest mx-auto"
         >
           <ul class="flex gap-5 m-8 no-underline">
             <li class="hover:underline hover:text-terracotta">
@@ -36,23 +45,23 @@
               <a href="création_végétales.html">Création Végétales</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="atelier.html">Ateliers & Événement </a>
+              <a href="atelier.html">Ateliers & Événements </a>
             </li>
             <li class="hover:underline hover:text-terracotta">
               <a href="a_propos.html">À propos</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="contact&commande.html">Contact & Commande</a>
+              <a href="contact&commande.html">Contact & Commandes</a>
             </li>
           </ul>
         </div>
 
-        <div class="flex items-center gap-4 md:gap-6">
+        <div class="flex items-center text-sm gap-4 md:gap-6">
           <a
             href="tel:0668285872"
-            class="hidden md:flex items-center gap-2 text-sauge font-bold text-sm hover:text-terracotta transition"
+            class="hidden md:flex items-center gap-2 text-sauge font-bold hover:text-terracotta transition"
           >
-            <i class="fa-solid fa-phone text-xs"></i>
+            <i class="fa-solid fa-phone"></i>
             06 68 28 58 72
           </a>
 
@@ -123,8 +132,9 @@
               class="text-gray-600 text-lg md:text-xl leading-relaxed italic max-w-xl"
             >
               Venez vivre une parenthèse végétale au cœur de mon atelier à
-              Vertou. Apprenez à composer avec les fleurs de saison et repartez
-              avec votre création unique.
+              Vertou. Apprenez à composer avec les fleurs de saison. Aucun
+              niveau requis, seulement l’envie de créer et passer un bon moment
+              et repartez avec votre création unique.
             </p>
 
             <div class="flex items-center gap-4 text-sauge">
@@ -201,11 +211,11 @@
               <ul class="space-y-4">
                 <li class="flex justify-between items-end">
                   <span class="text-gray-600">Bouquet fleurs fraîches</span>
-                  <span class="font-bold text-terracotta">45€</span>
+                  <span class="font-bold text-terracotta">50€</span>
                 </li>
                 <li class="flex justify-between items-end">
                   <span class="text-gray-600">Composition piquée</span>
-                  <span class="font-bold text-terracotta">45€</span>
+                  <span class="font-bold text-terracotta">50€</span>
                 </li>
               </ul>
               <p
@@ -229,7 +239,7 @@
               <ul class="space-y-4">
                 <li class="flex justify-between items-end">
                   <span class="text-gray-600">Bouquet fleurs séchées</span>
-                  <span class="font-bold text-terracotta">55€</span>
+                  <span class="font-bold text-terracotta">60€</span>
                 </li>
                 <li class="flex justify-between items-end">
                   <span class="text-gray-600">Composition fleurs séchées</span>
@@ -266,7 +276,7 @@
                   <p class="text-[10px] text-gray-500 italic mb-2">
                     Ou Grand-Parent / Petit-Enfant
                   </p>
-                  <p class="text-terracotta font-bold text-xl">35€</p>
+                  <p class="text-terracotta font-bold text-xl">39€</p>
                 </div>
                 <div class="pt-2">
                   <p
@@ -275,7 +285,7 @@
                     À la demande :
                   </p>
                   <p class="text-xs text-gray-500 italic">
-                    Guirlande, couronne de tête, bracelet etc....
+                    Couronne de tête, bracelet etc....
                   </p>
                 </div>
               </div>
@@ -294,7 +304,10 @@
             </div>
 
             <button
-              onclick="initCalendly()"
+              onclick="
+                initCalendly();
+                return false;
+              "
               class="bg-sauge text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-terracotta transition-all shadow-xl hover:-translate-y-1"
             >
               Voir les dates & Réserver via Calendly
@@ -306,7 +319,7 @@
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16 space-y-4">
             <h3 class="font-titre text-4xl text-sauge lowercase italic">
-              Paroles d'élèves
+              Paroles de participants
             </h3>
             <div class="flex justify-center gap-1 text-terracotta">
               <i class="fa-solid fa-star"></i>
@@ -357,17 +370,21 @@
               <p
                 class="text-gray-600 italic leading-relaxed mb-6 relative z-10"
               >
-                Dominique m'a proposé un très beau coussin de deuil. Elle a été
-                très réactive, compréhensive et a tout de suite cerné mes goûts.
-                Facilité de communication. Je recommande
+                J’ai eu la chance de participer à un atelier « Couronnes de Noël
+                » avec mes amis en novembre, et ce fut un pur moment de bonheur
+                ! Dominique, rayonnante et pleine d’énergie, nous a transmis sa
+                passion avec beaucoup de générosité, de précieux conseils et une
+                grande bienveillance. Une soirée magique, conviviale et
+                inspirante. C’est sans hésiter que je ferai de nouveau appel à
+                Dominique et à son incroyable talent ! Un immense merci ✨🎄
               </p>
               <div class="flex items-center gap-3">
                 <div>
                   <p class="font-bold text-sm text-gray-700">
-                    Adélaide Vrignon.
+                    Morgane Olivier.
                   </p>
                   <p class="text-[10px] text-gray-400 uppercase">
-                    Courronne deuil
+                    Atelier Couronne de Noël.
                   </p>
                 </div>
               </div>
@@ -458,9 +475,9 @@
                   </h3>
                 </div>
                 <p class="text-gray-600 leading-relaxed text-lg italic">
-                  "Le mariage est un moment unique. Je vous accompagne pour
-                  créer un univers floral naturel et harmonieux, en accord avec
-                  votre histoire."
+                  "Le mariage est un moment unique chargé d’émotions et de
+                  symboles. Je vous accompagne pour créer un univers floral
+                  naturel et harmonieux, en accord avec votre histoire."
                 </p>
               </div>
 
@@ -674,15 +691,13 @@
     <script src="src/js/script.js" defer></script>
     <script>
       function initCalendly() {
-        const container = document.getElementById("calendly-container");
-        // On nettoie le contenu et on injecte le widget
-        container.innerHTML = `<div class="calendly-inline-widget w-full h-[600px]" data-url="https://calendly.com/TON_URL_ICI?background_color=ffffff&text_color=4a4a4a&primary_color=83927d"></div>`;
-
-        const script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "https://assets.calendly.com/assets/external/widget.js";
-        script.async = true;
-        document.body.appendChild(script);
+        Calendly.initPopupWidget({
+          url: "https://calendly.com/artistfloraldominique",
+          /* Personnalisation aux couleurs d'Artistfloral */
+          color: "#83927d", // Ton vert Sauge
+          textColor: "#4a4a4a", // Gris foncé pour la lisibilité
+          branding: true, // Affiche ou non le logo Calendly
+        });
       }
     </script>
   </body>
