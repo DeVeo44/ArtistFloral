@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raphaël Houvenaghel" />
+    <meta property="og:site_name" content="Artistfloral" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr" />
+    <meta
+      name="description"
+      content="Contactez Artistfloral à Vertou pour vos commandes de fleurs fraîches, séchées et compositions florales uniques. Livraison rapide et soignée."
+    />
+    <meta property="og:title" content="Artistfloral | Contact & Commandes" />
+    <meta
+      property="og:description"
+      content="Contactez Artistfloral à Vertou pour vos commandes de fleurs fraîches, séchées et compositions florales uniques. Livraison rapide et soignée."
+    />
+    <meta
+      property="og:image"
+      content="src/assets/images/Logo Artistfloral.webp"
+    />
     <link rel="stylesheet" href="src/css/output.css" />
     <link
       rel="stylesheet"
@@ -13,6 +30,27 @@
     />
     <link rel="icon" type="image/png" href="src/assets/images/favicon.jpg" />
     <title>Contact & Commande de Fleurs à Vertou | Artistfloral</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+          "@type": "LocalBusiness",
+          "name": "Artistfloral",
+          "telephone": "+33668285872",
+          "email": "artistfloral44@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "23 Av. Watteau",
+            "addressLocality": "Vertou",
+            "postalCode": "44120",
+            "addressCountry": "FR"
+          },
+          "areaServed": ["Vertou", "Nantes Sud", "Rezé", "Les Sorinières"],
+          "paymentAccepted": "Cash, Credit Card, Bank Transfer"
+        }
+      }
+    </script>
   </head>
   <body>
     <header
@@ -422,318 +460,438 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Aube.webp"
-              alt="Bouquet Aube"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Aube</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Aube.webp"
+                alt="Bouquet de fleurs fraîches Aube - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Aube</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  32€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Aube</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 32€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Cachemire.webp"
-              alt="Bouquet Cachemire"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Cachemire</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Cachemire.webp"
+                alt="Bouquet de fleurs fraîches Cachemire - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Cachemire</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  55€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Cachemire</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 55€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Douceur.webp"
-              alt="Bouquet Douceur"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Douceur</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Douceur.webp"
+                alt="Bouquet de fleurs fraîches Douceur - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Douceur</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  37€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Douceur</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 37€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Eclat.webp"
-              alt="Bouquet Eclat"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Eclat</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Eclat.webp"
+                alt="Bouquet de fleurs fraîches Eclat - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Eclat</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  55€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Eclat</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 55€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Eveil.webp"
-              alt="Bouquet Eveil"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Eveil</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Eveil.webp"
+                alt="Bouquet de fleurs fraîches Eveil - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Eveil</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  38€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Eveil</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 38€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Poudrée.webp"
-              alt="Bouquet Poudrée"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Poudrée</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Poudrée.webp"
+                alt="Bouquet de fleurs fraîches Poudrée - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Poudrée</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  55€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Poudrée</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 55€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Paix.webp"
-              alt="Couronne Paix"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Paix</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Paix.webp"
+                alt="Bouquet de fleurs fraîches Paix - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Paix</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  125€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Paix</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 125€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Caresse.webp"
-              alt="Couronne Caresse"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Caresse</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Caresse.webp"
+                alt="Bouquet de fleurs fraîches Caresse - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Caresse</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  410€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Caresse</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 410€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Lien.webp"
-              alt="Couronne Lien"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Lien</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Lien.webp"
+                alt="Bouquet de fleurs fraîches Lien - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Lien</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  250€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Lien</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 250€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Sourire.webp"
-              alt="Bouquet Sourire"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Sourire</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Sourire.webp"
+                alt="Bouquet de fleurs fraîches Sourire - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Sourire</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  115€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Sourire</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 115€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Pétale.webp"
-              alt="Bouquet Pétale"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Pétale</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Pétale.webp"
+                alt="Bouquet de fleurs fraîches Pétale - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Pétale</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  45€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Pétale</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 45€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Aura.webp"
-              alt="Bouquet Aura"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Aura</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Aura.webp"
+                alt="Bouquet de fleurs fraîches Aura - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Aura</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  48€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Aura</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 48€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Opaline.webp"
-              alt="Bouquet Opaline"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Opaline</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Opaline.webp"
+                alt="Bouquet de fleurs fraîches Opaline - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Opaline</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  55€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Opaline</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 55€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Harmonie.webp"
-              alt="Bouquet Harmonie"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Harmonie</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Harmonie.webp"
+                alt="Bouquet de fleurs fraîches Harmonie - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Harmonie</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  45€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Harmonie</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 45€
               </p>
             </div>
           </div>
-          <div
-            class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-white cursor-default"
-          >
-            <img
-              src="src/assets/images/Féerie.webp"
-              alt="Bouquet Féerie"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
+          <div class="flex flex-col group">
             <div
-              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col items-center justify-center text-center p-4"
+              class="aspect-square rounded-2xl overflow-hidden shadow-sm relative bg-white border border-sauge/5"
             >
-              <h4 class="font-titre text-2xl text-sauge">Féerie</h4>
-              <div class="w-12 h-px bg-terracotta/20 my-3"></div>
-              <p
-                class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+              <img
+                src="src/assets/images/Féerie.webp"
+                alt="Bouquet de fleurs fraîches Féerie - Artistfloral Vertou"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="hidden lg:flex absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex-col items-center justify-center text-center p-4"
               >
+                <h3 class="font-titre text-2xl text-sauge">Féerie</h3>
+                <div class="w-12 h-px bg-terracotta/20 my-3"></div>
+                <p
+                  class="text-terracotta font-bold text-xl uppercase tracking-[0.2em]"
+                >
+                  42€
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 text-center lg:hidden">
+              <h3 class="font-titre text-xl text-sauge italic">Féerie</h3>
+              <p class="text-terracotta font-bold text-sm tracking-widest mt-1">
                 42€
               </p>
             </div>
