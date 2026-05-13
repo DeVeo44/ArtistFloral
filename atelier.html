@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raphaël Houvenaghel" />
+    <meta property="og:site_name" content="Artistfloral" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr" />
+    <meta
+      name="description"
+      content="Participez à nos ateliers d'art floral à Vertou. Apprenez à créer des bouquets de fleurs fraîches ou séchées dans une ambiance conviviale. Privatisation possible pour EVJF et anniversaires."
+    />
+    <meta
+      property="og:title"
+      content="Artistfloral | Ateliers & Événements - Vertou"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez nos ateliers et événements à Vertou, où vous pourrez apprendre à créer des bouquets floraux uniques et durables."
+    />
+    <meta
+      property="og:image"
+      content="src/assets/images/Logo Artistfloral.webp"
+    />
     <link rel="stylesheet" href="src/css/output.css" />
     <link
       rel="stylesheet"
@@ -19,6 +39,36 @@
       defer
     ></script>
     <title>Artistfloral | Ateliers & Événements - Vertou</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Ateliers d'art floral Artistfloral",
+        "description": "Ateliers créatifs en petit comité à Vertou pour apprendre à composer avec des fleurs de saison et séchées.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Artistfloral",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "23 Av. Watteau",
+            "addressLocality": "Vertou",
+            "postalCode": "44120",
+            "addressCountry": "FR"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "15"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "50.00",
+          "description": "À partir de 50€ par personne"
+        }
+      }
+    </script>
   </head>
   <body class="bg-floral-white font-corp">
     <header
@@ -29,23 +79,22 @@
           <a href="index.html" class="flex flex-col items-center">
             <img
               src="src/assets/images/Logo Artistfloral.webp"
-              alt="Logo d'ArtistFloral*"
+              alt="Logo d'ArtistFloral"
             />
           </a>
         </div>
-
         <div
           class="hidden lg:flex font-corp font-semibold text-sauge/90 uppercase text-sm tracking-widest mx-auto"
         >
-          <ul class="flex gap-5 m-8 no-underline">
+          <ul class="flex gap-5 m-7 no-underline">
             <li class="hover:underline hover:text-terracotta">
               <a href="index.html">Accueil</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="création_végétales.html">Création Végétales</a>
+              <a href="création_végétales.html">Créations Végétales</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="atelier.html">Ateliers & Événements </a>
+              <a href="atelier.html">Ateliers & Événements</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
               <a href="a_propos.html">À propos</a>
@@ -99,10 +148,10 @@
           class="flex flex-col gap-4 font-corp text-sauge uppercase text-xs tracking-widest font-semibold"
         >
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="création_végétales.html">Création Végétales</a></li>
-          <li><a href="atelier.html">Ateliers & Événement</a></li>
+          <li><a href="création_végétales.html">Créations Végétales</a></li>
+          <li><a href="atelier.html">Ateliers & Événements</a></li>
           <li><a href="a_propos.html">À propos</a></li>
-          <li><a href="contact&commande.html">Contact & Commande</a></li>
+          <li><a href="contact&commande.html">Contact & Commandes</a></li>
           <li class="pt-4 border-t border-sauge/10 md:hidden">
             <a href="tel:0668285872" class="text-terracotta font-bold"
               >06 68 28 58 72</a
@@ -118,7 +167,7 @@
           <div class="space-y-8">
             <div class="space-y-4">
               <h1
-                class="font-titre text-5xl md:text-7xl lg:text-8xl text-sauge leading-[0.9] lowercase"
+                class="font-titre text-5xl md:text-7xl lg:text-8xl text-sauge leading-[0.9]"
               >
                 Ateliers <br />
                 <span class="text-terracotta italic ml-8 md:ml-12"
@@ -169,11 +218,12 @@
             />
             <img
               src="src/assets/images/atelier-3.webp"
+              alt="création d'une couronne en sapin"
               class="rounded-4xl shadow-lg w-full h-48 object-cover -mt-6"
             />
             <img
               src="src/assets/images/atelier-4.webp"
-              alt="Création florale en atelier spécial noël"
+              alt="Ateliers de création de fleurs séchées"
               class="rounded-4xl shadow-lg w-full h-48 object-cover"
             />
           </div>
@@ -182,7 +232,7 @@
       <section class="bg-lin/30 py-20 px-6">
         <div class="max-w-7xl mx-auto space-y-16">
           <div class="text-center space-y-4">
-            <h3 class="font-titre text-4xl text-sauge lowercase italic">
+            <h3 class="font-titre text-4xl text-sauge italic">
               La Carte des Ateliers
             </h3>
             <p class="text-gray-500 max-w-2xl mx-auto italic">
@@ -194,6 +244,12 @@
             >
               Possibilité de privatiser l’atelier à partir de 4 personnes.
             </p>
+            <p
+              class="text-[10px] text-gray-400 uppercase tracking-widest font-semibold"
+            >
+              Les prix varient en fonction de la composition choisie et de la
+              saison:
+            </p>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -204,9 +260,7 @@
                 class="flex items-center gap-4 border-b border-sauge/10 pb-4"
               >
                 <span class="text-2xl">🌿</span>
-                <h4 class="font-titre text-2xl text-sauge lowercase">
-                  Fleurs Fraîches
-                </h4>
+                <h4 class="font-titre text-2xl text-sauge">Fleurs Fraîches</h4>
               </div>
               <ul class="space-y-4">
                 <li class="flex justify-between items-end">
@@ -232,9 +286,7 @@
                 class="flex items-center gap-4 border-b border-sauge/10 pb-4"
               >
                 <span class="text-2xl">🌾</span>
-                <h4 class="font-titre text-2xl text-sauge lowercase">
-                  Fleurs Séchées
-                </h4>
+                <h4 class="font-titre text-2xl text-sauge">Fleurs Séchées</h4>
               </div>
               <ul class="space-y-4">
                 <li class="flex justify-between items-end">
@@ -264,9 +316,7 @@
                 class="flex items-center gap-4 border-b border-sauge/20 pb-4"
               >
                 <span class="text-2xl">✨</span>
-                <h4 class="font-titre text-2xl text-sauge lowercase">
-                  Spécial & Duo
-                </h4>
+                <h4 class="font-titre text-2xl text-sauge">Spécial & Duo</h4>
               </div>
               <div class="space-y-4">
                 <div class="bg-white/60 p-4 rounded-xl border border-sauge/10">
@@ -318,7 +368,7 @@
       <section class="py-20 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16 space-y-4">
-            <h3 class="font-titre text-4xl text-sauge lowercase italic">
+            <h3 class="font-titre text-4xl text-sauge italic">
               Paroles de participants
             </h3>
             <div class="flex justify-center gap-1 text-terracotta">
@@ -449,8 +499,8 @@
               ></div>
 
               <img
-                src="src/assets/images/Coiffure Parme.webp"
-                alt="Exemple de Coiffure Floral pour un mariage"
+                src="src/assets/images/mariéefloral.webp"
+                alt="bouquet de mariée crée par Artistfloral"
                 loading="lazy"
                 class="relative z-10 rounded-t-full rounded-b-3xl shadow-2xl w-full aspect-3/4 object-cover"
               />
@@ -458,9 +508,7 @@
               <div
                 class="absolute bottom-6 -right-6 bg-white p-5 rounded-xl shadow-lg z-20 hidden md:block"
               >
-                <p class="font-titre text-2xl text-sauge">
-                  Coiffure de mariage
-                </p>
+                <p class="font-titre text-2xl text-sauge">Bouquet de mariée.</p>
               </div>
             </div>
 
@@ -486,7 +534,7 @@
                   class="group overflow-hidden rounded-xl shadow-md aspect-square relative"
                 >
                   <img
-                    src="src/assets/images/Mariage bouquet.webp"
+                    src="src/assets/images/mariage.webp"
                     alt="Bouquet mariée"
                     loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
@@ -505,8 +553,8 @@
                   class="group overflow-hidden rounded-xl shadow-md aspect-square relative mt-6"
                 >
                   <img
-                    src="src/assets/images/Centre de table Chardon.webp"
-                    alt="Centre de table"
+                    src="src/assets/images/decotable.webp"
+                    alt="Centre de table mariage"
                     loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                   />
@@ -524,8 +572,8 @@
                   class="group overflow-hidden rounded-xl shadow-md aspect-square relative"
                 >
                   <img
-                    src="src/assets/images/Boutonière nature.webp"
-                    alt="Boutonnière detail"
+                    src="src/assets/images/boutonniere.webp"
+                    alt="Boutonnière florale pour mariage"
                     loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                   />
@@ -535,7 +583,7 @@
                     <p
                       class="text-white font-corp uppercase text-[10px] tracking-widest font-bold"
                     >
-                      Détails
+                      Boutonnière
                     </p>
                   </div>
                 </div>
@@ -636,7 +684,7 @@
             <a
               href="création_végétales.html"
               class="hover:text-rose-poudre transition"
-              >Création Végétales</a
+              >Créations Végétales</a
             >
             <a href="atelier.html" class="hover:text-rose-poudre transition"
               >Ateliers & Événement</a

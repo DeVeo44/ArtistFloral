@@ -3,6 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raphaël Houvenaghel" />
+    <meta property="og:site_name" content="Artistfloral" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr" />
+    <meta
+      name="description"
+      content="Découvrez les créations végétales d'ArtistFloral à Vertou : bouquets de fleurs fraîches de saison, compositions de fleurs séchées durables et créations de couronnes de Deuil."
+    />
+    <meta
+      property="og:title"
+      content="Créations Végétales Uniques & Durables - ArtistFloral Vertou"
+    />
+    <meta
+      property="og:description"
+      content="Artisan fleuriste spécialisé en créations uniques à Vertou. Explorez notre univers floral."
+    />
     <link rel="stylesheet" href="src/css/output.css" />
     <link
       rel="stylesheet"
@@ -13,6 +29,40 @@
     />
     <link rel="icon" type="image/png" href="src/assets/images/favicon.jpg" />
     <title>Créations Végétales Uniques & Durables - Vertou</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Nos Créations Végétales - ArtistFloral Vertou",
+        "description": "Découvrez notre gamme de compositions florales artisanales : bouquets frais, fleurs séchées, et décorations pour événements.",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bouquets de saison",
+            "description": "Fleurs fraîches sélectionnées selon les arrivages et la saisonnalité."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Fleurs Séchées",
+            "description": "Compositions durables et poétiques pour une décoration d'intérieur intemporelle."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Deuil & Hommage",
+            "description": "Accompagnement floral avec sensibilité pour honorer la mémoire de vos proches."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Événementiel & Mariage",
+            "description": "Décoration florale sur mesure pour faire de vos événements des moments inoubliables."
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header
@@ -31,12 +81,12 @@
         <div
           class="hidden lg:flex font-corp font-semibold text-sauge/90 uppercase text-sm tracking-widest mx-auto"
         >
-          <ul class="flex gap-5 m-8 no-underline">
+          <ul class="flex gap-5 m-7 no-underline">
             <li class="hover:underline hover:text-terracotta">
               <a href="index.html">Accueil</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="création_végétales.html">Création Végétales</a>
+              <a href="création_végétales.html">Créations Végétales</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
               <a href="atelier.html">Ateliers & Événements </a>
@@ -93,7 +143,7 @@
           class="flex flex-col gap-4 font-corp text-sauge uppercase text-xs tracking-widest font-semibold"
         >
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="création_végétales.html">Création Végétales</a></li>
+          <li><a href="création_végétales.html">Créations Végétales</a></li>
           <li><a href="atelier.html">Ateliers & Événements</a></li>
           <li><a href="a_propos.html">À propos</a></li>
           <li><a href="contact&commande.html">Contact & Commande</a></li>
@@ -112,7 +162,7 @@
             class="font-titre text-4xl md:text-6xl text-terracotta leading-tight"
           >
             Créations Végétales & <br class="hidden md:block" />
-            Ateliers Floral à Vertou
+            Ateliers d'art floral à Vertou
           </h1>
           <div
             class="space-y-4 text-gray-700 text-lg md:text-xl italic max-w-2xl mx-auto leading-relaxed"
@@ -138,7 +188,7 @@
               <h2
                 class="font-titre text-3xl md:text-4xl text-sauge underline decoration-sauge/20 underline-offset-8"
               >
-                Bouquets de saison
+                Nos Bouquets de Saison à Vertou
               </h2>
             </div>
             <p class="text-gray-600 leading-relaxed max-w-md">
@@ -158,26 +208,26 @@
           <div class="w-full md:w-1/2">
             <div class="grid grid-cols-2 gap-4 md:gap-6 max-w-md ml-auto">
               <img
-                src="src/assets/images/Lumière.webp"
-                alt="Bouquet Lumière"
+                src="src/assets/images/Tendresse.webp"
+                alt="Bouquet Tendresse réalisation artisanale à Vertou"
                 class="rounded-2xl shadow-md aspect-4/5 object-cover w-full"
               />
 
               <img
-                src="src/assets/images/Prairie.webp"
-                alt="Bouquet Prairie"
+                src="src/assets/images/Romance.webp"
+                alt="Bouquet Romance réalisation artisanale à Vertou"
                 class="rounded-2xl shadow-md aspect-4/5 object-cover w-full md:mt-10"
               />
 
               <img
-                src="src/assets/images/Elegance.webp"
-                alt="Bouquet Élégance"
+                src="src/assets/images/Rosée.webp"
+                alt="Bouquet Rosée réalisation artisanale à Vertou"
                 class="rounded-2xl shadow-md aspect-4/5 object-cover w-full md:-mt-10"
               />
 
               <img
                 src="src/assets/images/Velours.webp"
-                alt="Création florale Velours"
+                alt="Création florale Velours réalisation artisanale à Vertou"
                 class="rounded-2xl shadow-md aspect-4/5 object-cover w-full"
               />
             </div>
@@ -218,26 +268,26 @@
             <div class="grid grid-cols-2 gap-4 md:gap-6 max-w-md mr-auto">
               <img
                 src="/src/assets/images/Paix.webp"
-                alt="Bouquet d'hommage Paix"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full"
+                alt="Bouquet d'hommage Paix pour vous accompagner dans les moments difficiles"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full"
               />
 
               <img
                 src="/src/assets/images/Douceur.webp"
-                alt="Hommage floral Douceur"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full md:mt-10"
+                alt="Hommage floral Douceur pour vous accompagner dans les moments difficiles"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full md:mt-10"
               />
 
               <img
                 src="/src/assets/images/Lien.webp"
-                alt="Hommage floral Lien"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full md:-mt-10"
+                alt="Hommage floral Lien pour vous accompagner dans les moments difficiles"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full md:-mt-10"
               />
 
               <img
                 src="/src/assets/images/Caresse.webp"
-                alt="Composition de deuil respectueuse"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full"
+                alt="Composition de deuil respectueuse pour vous accompagner dans les moments difficiles"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full"
               />
             </div>
           </div>
@@ -274,26 +324,26 @@
             <div class="grid grid-cols-2 gap-4 md:gap-6 max-w-md ml-auto">
               <img
                 src="/src/assets/images/Dune.webp"
-                alt="Bouquet de fleurs séchées Dune"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full"
+                alt="Bouquet de fleurs séchées Dune création par ArtistFloral à Vertou"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full"
               />
 
               <img
-                src="src/assets/images/Ambre.webp"
-                alt="Couronne de fleurs séchées Ambre"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full md:mt-10"
+                src="src/assets/images/fleursecher1.webp"
+                alt="Bouquet de fleurs séchées Poésie création par ArtistFloral à Vertou"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full md:mt-10"
               />
 
               <img
                 src="src/assets/images/Soleil.webp"
-                alt="Fleurs séchées Soleil"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full md:-mt-10"
+                alt="Fleurs séchées Soleil création par ArtistFloral à Vertou"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full md:-mt-10"
               />
 
               <img
-                src="src/assets/images/Blush.webp"
-                alt="Composition florale séchée durable"
-                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full h-full"
+                src="src/assets/images/fleursecher2.webp"
+                alt="Bouquet de fleurs séchées Harmonie création par ArtistFloral à Vertou"
+                class="rounded-2xl shadow-md aspect-4/5 object-cover w-full"
               />
             </div>
           </div>
@@ -410,7 +460,7 @@
             <a
               href="création_végétales.html"
               class="hover:text-rose-poudre transition"
-              >Création Végétales</a
+              >Créations Végétales</a
             >
             <a href="atelier.html" class="hover:text-rose-poudre transition"
               >Ateliers & Événement</a

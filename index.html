@@ -31,6 +31,49 @@
     />
     <link rel="icon" type="image/jpg" href="src/assets/images/favicon.jpg" />
     <title>Artistfloral : votre artisan floral à Vertou</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Artistfloral",
+        "image": "https://www.artistfloral.fr/src/assets/images/Logo%20Artistfloral.webp",
+        "@id": "https://www.artistfloral.fr",
+        "url": "https://www.artistfloral.fr",
+        "telephone": "+33668285872",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "23 Av. Watteau",
+          "addressLocality": "Vertou",
+          "postalCode": "44120",
+          "addressRegion": "Loire-Atlantique",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.1687,
+          "longitude": -1.4721
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61556307237543",
+          "https://www.instagram.com/artistfloral/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header
@@ -41,23 +84,22 @@
           <a href="index.html" class="flex flex-col items-center">
             <img
               src="src/assets/images/Logo Artistfloral.webp"
-              alt="Logo d'ArtistFloral*"
+              alt="Logo d'ArtistFloral"
             />
           </a>
         </div>
-
         <div
           class="hidden lg:flex font-corp font-semibold text-sauge/90 uppercase text-sm tracking-widest mx-auto"
         >
-          <ul class="flex gap-5 m-8 no-underline">
+          <ul class="flex gap-5 m-7 no-underline">
             <li class="hover:underline hover:text-terracotta">
               <a href="index.html">Accueil</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="création_végétales.html">Création Végétales</a>
+              <a href="création_végétales.html">Créations Végétales</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
-              <a href="atelier.html">Ateliers & Événements </a>
+              <a href="atelier.html">Ateliers & Événements</a>
             </li>
             <li class="hover:underline hover:text-terracotta">
               <a href="a_propos.html">À propos</a>
@@ -83,14 +125,20 @@
               class="w-9 h-9 border border-sauge/40 rounded-full flex items-center justify-center text-sauge hover:bg-sauge hover:text-white transition-all duration-300"
               target="_blank"
             >
-              <i class="fa-brands fa-facebook-f text-sm"></i>
+              <i
+                class="fa-brands fa-facebook-f text-sm"
+                aria-label="Suivez-nous sur Facebook"
+              ></i>
             </a>
             <a
               href="https://www.instagram.com/artistfloral/"
               class="w-9 h-9 border border-sauge/40 rounded-full flex items-center justify-center text-sauge hover:bg-sauge hover:text-white transition-all duration-300"
               target="_blank"
             >
-              <i class="fa-brands fa-instagram text-sm"></i>
+              <i
+                class="fa-brands fa-instagram text-sm"
+                aria-label="Suivez-nous sur Instagram"
+              ></i>
             </a>
 
             <button
@@ -111,7 +159,7 @@
           class="flex flex-col gap-4 font-corp text-sauge uppercase text-xs tracking-widest font-semibold"
         >
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="création_végétales.html">Création Végétales</a></li>
+          <li><a href="création_végétales.html">Créations Végétales</a></li>
           <li><a href="atelier.html">Ateliers & Événements</a></li>
           <li><a href="a_propos.html">À propos</a></li>
           <li><a href="contact&commande.html">Contact & Commandes</a></li>
@@ -128,6 +176,7 @@
         <div class="max-w-5xl mx-auto relative group">
           <img
             src="/src/assets/images/hero2.webp"
+            fetchpriority="high"
             alt="Atelier d'art floral à Vertou - création de bouquet de saison"
             class="w-full h-80 md:h-125 object-cover rounded-sm shadow-2xl"
           />
@@ -189,10 +238,7 @@
               saison et de cultiver moi-même une partie de mes fleurs. En
               limitant ainsi les intermédiaires et les transports, je réduis
               l'impact environnemental tout en vous garantissant une fraîcheur
-              absolue et évite le gaspillage. Mon objectif profond ? Utiliser ce
-              que la nature nous offre pour créer une émotion. Chaque bouquet
-              est créé avec une sensibilité unique et l’envie de vous faire
-              plaisir.
+              absolue et évite le gaspillage.
             </p>
             <p
               class="text-base text-black md:text-lg leading-relaxed font-light"
@@ -328,7 +374,7 @@
                 L'atelier s'ouvre à vous pour des parenthèses créatives,
                 conviviales, au plus près des fleurs
               </p>
-              <ul class="space-y-4 text-gray-700 text-sm md:text-base">
+              <ul class="space-y-4 text-gray-700 text-base md:text-base">
                 <li>
                   <strong class="text-terracotta font-corp"
                     >Ateliers d'art floral :</strong
@@ -374,9 +420,7 @@
                 >
                   Dimanche
                 </p>
-                <p
-                  class="text-xl text-sauge font-bold tracking-tight uppercase"
-                >
+                <p class="text-sm text-sauge font-bold tracking-tight">
                   Au marché de Vertou
                 </p>
               </div>
@@ -514,7 +558,7 @@
             <a
               href="création_végétales.html"
               class="hover:text-rose-poudre transition"
-              >Création Végétales</a
+              >Créations Végétales</a
             >
             <a href="atelier.html" class="hover:text-rose-poudre transition"
               >Ateliers & Événement</a
