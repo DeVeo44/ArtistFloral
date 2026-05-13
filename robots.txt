@@ -1,0 +1,10 @@
+# Autoriser tous les robots à explorer le site
+User-agent: *
+Allow: /
+
+# Bloquer uniquement les dossiers techniques si nécessaire
+# Par exemple, si tu as un dossier "src" avec tes fichiers non compilés :
+Disallow: /src/
+
+# Emplacement du plan du site
+Sitemap: https://www.artistfloral.fr/sitemap.xml

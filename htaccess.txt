@@ -1,0 +1,15 @@
+# Active le moteur de réécriture d'URL
+RewriteEngine On
+
+# --- Règle 1 : Rediriger l'utilisateur si il tape l'URL avec .html ---
+# Si une requête est faite pour une page qui se termine par .html
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+# Alors, on la redirige de manière permanente (301) vers la même URL SANS .html
+RewriteRule ^ /%1 [R=301,L]
+
+# --- Règle 2 : Dire au serveur comment trouver le fichier ---
+# Si le fichier demandé n'existe PAS en tant que fichier ou dossier
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Alors, on cherche en interne un fichier du même nom avec l'extension .html
+RewriteRule ^([^/.]+)$ /$1.html [L]
