@@ -130,8 +130,8 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-lin: #fffdeb;
-    --color-sauge: #6ab41d;
+    --color-lin: #ebe9dd;
+    --color-sauge: #61754c;
     --color-rose-poudre: #e6b8b0;
     --color-terracotta: #c98c6b;
     --color-floral-white: #fffaf1;
